@@ -1,0 +1,328 @@
+/* Define um gradiente de fundo para o corpo da página */
+body {
+  background: linear-gradient(35deg, rgb(234, 237, 221), rgb(246, 255, 217));
+}
+
+/* Estilo para a seção de notícias */
+.noticiaTotal ul {
+  position: relative;
+  top: 5vh;
+  left: 2.5%;
+  width: 95%;
+  height: auto;
+}
+
+/* Estilo para os itens da lista de notícias */
+.noticiaTotal ul li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+}
+
+/* Estilo para os títulos dentro dos itens da lista de notícias */
+.noticiaTotal ul li h1 {
+  width: 50%;
+  height: auto;
+  color: rgb(15, 171, 15);
+  font-size: 2vw;
+}
+
+/* Estilo para as imagens dentro dos itens da lista de notícias */
+.noticiaTotal ul li img {
+  width: 40%;
+  height: auto;
+}
+
+/* Estilo para os links dentro da seção de notícias */
+.noticiaTotal a {
+  position: relative;
+  color: rgb(112, 55, 8);
+  font-weight: bold;
+  font-size: 1.5vw;
+  transition: 0.5s;
+  border-bottom: 2px solid rgb(112, 55, 8);
+  align-self: end;
+  right: 10%;
+}
+
+/* Estilo para os links ao passar o mouse */
+.noticiaTotal a:hover {
+  color: rgb(15, 171, 15);
+  border-bottom: 2px solid rgb(15, 171, 15);
+}
+
+/* Estilo para a explicação dentro da seção de notícias */
+.noticiaTotal .explicacao {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  top: 6vh;
+  font-size: 1.3vw;
+  color: rgb(112, 55, 8);
+  border-bottom: 2px solid rgb(112, 55, 8);
+}
+
+/* Estilo para o container de comentários */
+#comentario {
+  position: relative;
+  height: 80vh;
+  width: 50%;
+  left: 25%;
+  top: 10vh;
+  box-shadow: 1px 1px 10px 0.2rem rgb(112, 55, 8);
+  border-radius: 15px;
+  overflow: auto;
+}
+
+/* Estilo para o título dentro do container de comentários */
+#comentario .titulo {
+  position: relative;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  width: 50%;
+  height: 8vh;
+  left: 25%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+/* Estilo para as faixas dentro do container de comentários */
+#faixas1 {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+}
+
+/* Estilo para as faixas de destaque dentro do container de comentários */
+#comentario .listra1,
+.listra2 {
+  position: absolute;
+  background-color: rgb(120, 69, 33);
+  width: 30%;
+  height: 8vh;
+  top: 3vh;
+}
+
+/* Estilo para a faixa de destaque na direita dentro do container de comentários */
+#comentario .listra2 {
+  left: 69.5%;
+  border-radius: 0 0 0 15px;
+}
+
+/* Estilo para a faixa de destaque na esquerda dentro do container de comentários */
+#comentario .listra1 {
+  border-radius: 0 0 15px 0;
+}
+
+/* Estilo para a lista dentro do container de comentários */
+#comentario ul {
+  list-style: none;
+}
+
+/* Estilo para os itens da lista dentro do container de comentários */
+#comentario ul li {
+  width: 90%;
+  height: auto;
+  color: rgb(112, 55, 8);
+  border-bottom: 2px solid rgb(112, 55, 8);
+  padding: 10px;
+}
+
+/* Estilo para as imagens dentro dos itens da lista de comentários */
+#comentario ul li img {
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Estilo para o nome anônimo dentro dos itens da lista de comentários */
+#comentario ul li .nomeAnonimo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  font-size: 1.2vw;
+}
+
+/* Estilo para os parágrafos dentro dos itens da lista de comentários */
+#comentario ul li p {
+  font-size: 1vw;
+}
+
+/* Estilo para a seção de deixar um comentário dentro do container de comentários */
+#comentario .deixeComentario {
+  height: auto;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Estilo para o campo de input dentro da seção de deixar um comentário */
+#comentario .deixeComentario input {
+  width: 70%;
+  border-radius: 15px;
+  border: 2px solid rgb(112, 55, 8);
+  height: auto;
+}
+
+/* Estilo para o botão dentro da seção de deixar um comentário */
+#comentario .deixeComentario button {
+  color: rgb(15, 171, 15);
+  width: 15%;
+  height: auto;
+  font-size: 2.5vw;
+  border: none;
+}
+
+/* Estilo para o rodapé */
+footer {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  top: 15vh;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+/* Estilos responsivos para telas com largura até 1175px */
+@media only screen and (max-width: 1175px) {
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 1.5vw;
+  }
+
+  /* Estilo para o nome anônimo dentro dos itens da lista de comentários */
+  #comentario ul li .nomeAnonimo {
+    font-size: 1.5vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 740px */
+@media only screen and (max-width: 740px) {
+
+  /* Estilo para exibir os itens da lista de notícias em bloco */
+  .noticiaTotal ul li {
+    display: block;
+  }
+
+  /* Estilo para os títulos dentro dos itens da lista de notícias */
+  .noticiaTotal ul li h1 {
+    font-size: 3vw;
+  }
+
+  /* Estilo para os links dentro da seção de notícias */
+  .noticiaTotal a {
+    font-size: 2.3vw;
+    right: 0;
+  }
+
+  /* Estilo para a explicação dentro da seção de notícias */
+  .noticiaTotal .explicacao {
+    font-size: 2vw;
+  }
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 2vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 675px */
+@media only screen and (max-width: 675px) {
+
+  /* Estilo para o título dentro do container de comentários */
+  #comentario .titulo {
+    font-size: 4vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 620px */
+@media only screen and (max-width: 620px) {
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 2.3vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 550px */
+@media only screen and (max-width: 550px) {
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 2.7vw;
+  }
+
+  /* Estilo para a explicação dentro da seção de notícias */
+  .noticiaTotal .explicacao {
+    font-size: 2.5vw;
+  }
+
+  /* Estilo para o rodapé */
+  footer {
+    font-size: 2.5vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 475px */
+@media only screen and (max-width: 475px) {
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 3.1vw;
+  }
+
+  /* Estilo para o rodapé */
+  footer {
+    font-size: 3vw;
+  }
+
+  /* Estilo para o container de comentários para permitir rolagem */
+  #comentario {
+    overflow: scroll;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 450px */
+@media only screen and (max-width: 450px) {
+
+  /* Estilo para os parágrafos dentro dos itens da lista de comentários */
+  #comentario ul li p {
+    font-size: 4vw;
+  }
+
+  /* Estilo para a explicação dentro da seção de notícias */
+  .noticiaTotal .explicacao {
+    font-size: 4vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 420px */
+@media only screen and (max-width: 420px) {
+
+  /* Estilo para a explicação dentro da seção de notícias */
+  .noticiaTotal .explicacao {
+    font-size: 5vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 800px */
+@media only screen and (max-width: 800px) {
+
+  /* Estilo para a explicação dentro da seção de notícias */
+  .noticiaTotal .explicacao {
+    font-size: 2.5vw;
+  }
+}

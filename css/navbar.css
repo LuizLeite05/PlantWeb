@@ -1,0 +1,126 @@
+/* Remove o sublinhado de todos os elementos de texto */
+* {
+  text-decoration: none;
+}
+
+/* Define o comportamento de rolagem suave para toda a página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+  background: rgb(15, 171, 15);
+  font-family: calibri;
+  height: auto;
+  padding-left: 15px;
+}
+
+/* Contêiner para o conteúdo da navbar, usa flexbox para layout */
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo para o logo dentro da navbar */
+.logo a {
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+}
+
+/* Estilo para o menu de navegação */
+#menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Estilo para os itens do menu */
+#menu li {
+  list-style: none;
+  width: auto;
+}
+
+/* Estilo para os links dentro dos itens do menu */
+#menu li a {
+  color: white;
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+
+/* Estilo para os links do menu ao passar o mouse */
+#menu li a:hover {
+  color: rgb(191, 190, 190);
+}
+
+/* Estilo para o ícone do perfil */
+#itemPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para o ícone de perfil */
+#perfil {
+  font-size: 5vw;
+  color: aqua;
+}
+
+/* Estilos responsivos para telas pequenas */
+@media only screen and (max-width: 600px) {
+
+  /* Estilo para o contêiner da navbar em telas pequenas */
+  .navdiv {
+    display: block;
+    padding-right: 10%;
+  }
+
+  /* Estilo para o menu em telas pequenas */
+  #menu {
+    width: 100%;
+  }
+
+  /* Estilo para os links do menu em telas pequenas */
+  #menu li a {
+    font-size: 3vw;
+  }
+
+  /* Estilo para o logo em telas pequenas */
+  #item-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilo para o logo em telas pequenas */
+  .logo a {
+    font-size: 7vw;
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media only screen and (max-width: 500px) {
+
+  /* Estilo para os links do menu em telas muito pequenas */
+  #menu li a {
+    font-size: 5vw;
+  }
+}
+
+/* Estilos responsivos para telas médias */
+@media only screen and (max-width: 1100px) {
+
+  /* Estilo para os links do menu em telas médias */
+  #menu li a {
+    font-size: 3vw;
+  }
+
+  /* Estilo para o logo em telas médias */
+  .logo a {
+    font-size: 7vw;
+  }
+}

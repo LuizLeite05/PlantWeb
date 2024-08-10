@@ -1,0 +1,261 @@
+/* Importa a fonte Montserrat do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/* Reseta margin, padding e define box-sizing para todos os elementos, e aplica a fonte Montserrat */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+  background-color: #c9ffec;
+  background: linear-gradient(35deg, rgb(234, 237, 221), rgb(246, 255, 217));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Estilo para o logo */
+.logo {
+  position: relative;
+  display: flex;
+  width: 10vw;
+}
+
+/* Estilo para o container principal */
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+/* Estilo para os parágrafos dentro do container */
+.container p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+/* Estilo para os spans dentro do container */
+.container span {
+  font-size: 12px;
+}
+
+/* Estilo para os links dentro do container */
+.container a {
+  color: #29924c;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+}
+
+/* Estilo para os botões dentro do container */
+.container button {
+  background: linear-gradient(35deg, rgb(6, 151, 6), rgb(7, 220, 7));
+  border: 2px solid rgb(7, 220, 7);
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para links dentro dos botões */
+.container button a {
+  color: #fff;
+}
+
+/* Estilo para o botão ao passar o mouse */
+.container button:hover {
+  opacity: 0.92;
+  box-shadow: 6px 2px 2rem rgba(0, 128, 0, 0.362);
+  transition: 0.9s;
+}
+
+/* Estilo para botões com a classe 'hidden' */
+.container button.hidden {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/* Estilo para o formulário dentro do container */
+.container form {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+/* Estilo para os inputs dentro do formulário */
+.container input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+/* Estilo para o contêiner de formulário */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Estilo para a seção de 'sign-in' */
+.sign-in {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+/* Estilo para a seção de 'sign-in' quando a classe 'active' está presente no container */
+.container.active .sign-in {
+  transform: translateX(100%);
+}
+
+/* Estilo para a seção de 'sign-up' */
+.sign-up {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Estilo para a seção de 'sign-up' quando a classe 'active' está presente no container */
+.container.active .sign-up {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: move 0.6s;
+}
+
+/* Animação para a transição entre 'sign-in' e 'sign-up' */
+@keyframes move {
+
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+/* Estilo para os ícones sociais */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo para o contêiner de alternância */
+.toggle-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-radius: 150px 0 0 0;
+  z-index: 1000;
+}
+
+/* Estilo para o contêiner de alternância quando a classe 'active' está presente no container */
+.container.active .toggle-container {
+  transform: translateX(-100%);
+  border-radius: 1px 0 0 15px;
+}
+
+/* Estilo para o painel de alternância */
+.toggle {
+  background-color: rgb(15, 171, 15);
+  height: 100%;
+  background: linear-gradient(to right, rgb(15, 171, 15), #047304);
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+/* Estilo para o painel de alternância quando a classe 'active' está presente no container */
+.container.active .toggle {
+  transform: translateX(50%);
+}
+
+/* Estilo para o painel de alternância esquerda */
+.toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+/* Estilo para o painel de alternância à esquerda */
+.toggle-left {
+  transform: translateX(-200%);
+}
+
+/* Estilo para o painel de alternância à esquerda quando a classe 'active' está presente no container */
+.container.active .toggle-left {
+  transform: translateX(0);
+}
+
+/* Estilo para o painel de alternância à direita */
+.toggle-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+/* Estilo para o painel de alternância à direita quando a classe 'active' está presente no container */
+.container.active .toggle-right {
+  transform: translateX(200%);
+}

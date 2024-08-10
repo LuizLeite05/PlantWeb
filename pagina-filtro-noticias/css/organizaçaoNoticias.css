@@ -1,0 +1,60 @@
+/* Estilo para o contêiner principal da lista de notícias */
+.lista-noticias {
+  position: relative;
+}
+
+/* Estilo para a lista não ordenada dentro do contêiner */
+.lista-noticias ul {
+  position: relative;
+  width: 75%;
+  height: auto;
+  list-style: none;
+}
+
+/* Estilo para cada item da lista */
+.lista-noticias li {
+  padding: 15px;
+  border-bottom: 2px solid rgb(112, 55, 8);
+}
+
+/* Estilo para itens da lista dentro do elemento ul */
+.lista-noticias ul li {
+  width: 120%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+}
+
+/* Estilo para os links dentro dos itens da lista */
+.lista-noticias ul li a {
+  width: 50%;
+  color: rgb(15, 171, 15);
+  font-size: 1.2vw;
+  font-size-adjust: auto;
+  display: flex;
+}
+
+/* Estilo para as imagens dentro dos itens da lista */
+.lista-noticias ul li img {
+  width: 40%;
+  height: auto;
+}
+
+/* Ajustes de estilo para telas com largura máxima de 920px */
+@media only screen and (max-width: 920px) {
+  .lista-noticias ul li {
+    display: block;
+  }
+
+  .lista-noticias ul li a {
+    font-size: 2vw;
+  }
+}
+
+/* Ajustes de estilo para telas com largura máxima de 500px */
+@media only screen and (max-width: 500px) {
+  .lista-noticias ul li a {
+    font-size: 3vw;
+  }
+}

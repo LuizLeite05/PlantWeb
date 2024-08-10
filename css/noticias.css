@@ -1,0 +1,132 @@
+/* Estilo para o título dentro do elemento #noticias */
+#noticias #titulo {
+  position: relative;
+  background-color: rgb(120, 69, 33);
+  color: white;
+  width: 50%;
+  height: 8vh;
+  left: 25%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+/* Estilo para o contêiner das faixas 2 */
+#faixas2 {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  top: 15vh;
+}
+
+/* Estilo para a faixa 3 e faixa 4 dentro do elemento #noticias */
+#noticias .listra3,
+.listra4 {
+  position: absolute;
+  background-color: rgb(15, 171, 15);
+  width: 30%;
+  height: 8vh;
+  align-self: end;
+}
+
+/* Estilo específico para a faixa 4 */
+#noticias .listra4 {
+  left: 70%;
+  border-radius: 0 0 0 15px;
+}
+
+/* Estilo específico para a faixa 3 */
+#noticias .listra3 {
+  border-radius: 0 0 15px 0;
+}
+
+/* Estilo para a lista de notícias */
+.lista-noticias {
+  position: relative;
+}
+
+/* Estilo para a lista dentro de lista-noticias */
+.lista-noticias ul {
+  position: relative;
+  left: 15%;
+  width: 75%;
+  height: auto;
+  top: 25vh;
+}
+
+/* Estilo para cada item da lista de notícias */
+.lista-noticias ul li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  padding-top: 2%;
+  border-bottom: 2px solid rgb(161, 88, 35);
+}
+
+/* Estilo para os links dentro dos itens da lista de notícias */
+.lista-noticias ul li a {
+  width: 50%;
+  height: auto;
+  color: rgb(15, 171, 15);
+  font-size: 1.2vw;
+  font-size-adjust: auto;
+}
+
+/* Estilo para as imagens dentro dos itens da lista de notícias */
+.lista-noticias ul li img {
+  width: 40%;
+  height: auto;
+}
+
+/* Estilos responsivos para telas com largura até 920px */
+@media only screen and (max-width: 920px) {
+
+  /* Estilo para os itens da lista de notícias em telas pequenas */
+  .lista-noticias ul li {
+    display: block;
+  }
+
+  /* Estilo para os links dentro dos itens da lista de notícias em telas pequenas */
+  .lista-noticias ul li a {
+    font-size: 2vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 675px */
+@media only screen and (max-width: 675px) {
+
+  /* Estilo para o título dentro do elemento #noticias em telas pequenas */
+  #noticias #titulo {
+    font-size: 4vw;
+  }
+}
+
+/* Estilos responsivos para telas com largura até 500px */
+@media only screen and (max-width: 500px) {
+
+  /* Estilo para os links dentro dos itens da lista de notícias em telas muito pequenas */
+  .lista-noticias ul li a {
+    font-size: 3vw;
+  }
+}
+
+/* Estilo para o rodapé da página */
+footer {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-size-adjust: auto;
+  top: 30vh;
+}

@@ -1,0 +1,86 @@
+/* Estilo para o plano de fundo do corpo da página */
+body {
+  background: linear-gradient(35deg, rgb(234, 237, 221), rgb(246, 255, 217));
+}
+
+/* Estilo para o conteúdo principal da página */
+main {
+  color: rgb(112, 55, 8);
+}
+
+/* Estilo para o nome do perfil */
+.nome-perfil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 15%;
+  font-size: 2vw;
+  width: 70%;
+  height: 8vh;
+  top: 2vh;
+}
+
+/* Estilo para todos os elementos h2 */
+h2 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para as imagens de perfil */
+img {
+  width: 20%;
+  border-radius: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid gray;
+  padding: 1%;
+  left: 40%;
+  top: 3vh;
+}
+
+/* Estilo para as informações do perfil */
+#informacoes-perfil {
+  position: relative;
+  align-items: center;
+  width: 68%;
+  left: 16%;
+  font-size: 1vw;
+  top: 3vh;
+}
+
+/* Estilo para o email e senha, aplicados de forma semelhante */
+#informacoes-perfil,
+.email {
+  position: relative;
+  font-size: 2vw;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  left: 25%;
+}
+
+/* Estilo específico para o campo de senha */
+.senha {
+  font-size: 2vw;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  left: 25%;
+}
+
+/* Estilo para o rodapé */
+footer {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}

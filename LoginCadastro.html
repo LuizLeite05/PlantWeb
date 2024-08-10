@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Declaração do tipo de documento HTML e definição do idioma da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link para ícones da FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Favicon da página -->
+  <link rel="shortcut icon" href="./img/logoPlantWeb.png" type="image/x-icon" />
+  <!-- Link para o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="cssLoginCadastro/index.css" />
+  <!-- Título da página -->
+  <title>Agrinho</title>
+</head>
+
+<body>
+  <!-- Contêiner principal -->
+  <div class="container" id="container">
+    <!-- Formulário de registro (sign-up) -->
+    <div class="form-container sign-up">
+      <form id="loginForm">
+        <h1>Criar uma Conta</h1>
+        <!-- Ícones sociais -->
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <span>use seu email para se registrar</span>
+        <!-- Campos de entrada para nome, email e senha -->
+        <input type="text" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <!-- Botão para enviar o formulário -->
+        <button type="submit" onclick="next()">
+          <a href="index.html">Entrar</a>
+        </button>
+      </form>
+    </div>
+    <!-- Formulário de login (sign-in) -->
+    <div class="form-container sign-in">
+      <form>
+        <h1>PLANTWEB</h1>
+        <!-- Ícones sociais -->
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <span>use seu email e senha!</span>
+        <!-- Campos de entrada para email e senha -->
+        <input id="Email" type="email" placeholder="Email" />
+        <input if="Password" type="password" placeholder="Password" />
+        <!-- Link para recuperação de senha -->
+        <a href="#">Esqueceu Sua Senha?</a>
+        <!-- Botão para enviar o formulário -->
+        <button type="submit" class="button">
+          <a href="index.html">Entrar</a>
+        </button>
+      </form>
+    </div>
+    <!-- Contêiner para alternar entre os formulários -->
+    <div class="toggle-container">
+      <div class="toggle">
+        <!-- Painel para alternar para a tela de login -->
+        <div class="toggle-panel toggle-left">
+          <h1>Bem-Vindo de volta!</h1>
+          <p>
+            Entre para nosso site para ficar por dentro das maiores noticias
+            do mundo agro
+          </p>
+          <button class="hidden" id="login">Login</button>
+        </div>
+        <!-- Painel para alternar para a tela de cadastro -->
+        <div class="toggle-panel toggle-right">
+          <h1>Olá, Amigo!</h1>
+          <p>Seja bem-vindo ao PlantWeb!</p>
+          <button class="hidden" id="register">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para funcionalidade do login e cadastro -->
+  <script src="jsLoginCadastro/loginCadastro.js"></script>
+</body>
+
+</html>

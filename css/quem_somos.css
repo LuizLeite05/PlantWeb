@@ -1,0 +1,158 @@
+/* Estilo para o corpo da página */
+body {
+  background: linear-gradient(35deg, rgb(234, 237, 221), rgb(246, 255, 217));
+  max-width: 100%;
+}
+
+/* Layout da página usando grid */
+.template {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "header"
+    "quemSomos"
+    "main"
+    "footer";
+}
+
+/* Estilo para a imagem de fundo */
+.img1 {
+  position: relative;
+  /* Imagem de fundo */
+  background-image: url("../img/ImagemGrupo.jpg");
+  width: 100%;
+  height: 85vh;
+  /* Efeito parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(30%);
+}
+
+/* Estilo para o cabeçalho */
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  top: 3vh;
+  height: 15vh;
+}
+
+/* Estilo para a seção 'quemSomos' */
+.quemSomos {
+  display: grid;
+  grid-area: quemSomos;
+}
+
+/* Estilo para o título dentro da seção 'quemSomos' */
+.quemSomos h1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  color: white;
+  background-color: rgb(15, 171, 15);
+  height: 60%;
+  width: 500%;
+  bottom: 3vh;
+  border-radius: 15px;
+  justify-self: center;
+}
+
+/* Estilo para as faixas dentro da seção 'quemSomos' */
+.quemSomos .listra1,
+.listra2 {
+  position: absolute;
+  background-color: rgb(120, 69, 33);
+  width: 25%;
+  height: 60%;
+  border-radius: 0 0 15px 0;
+}
+
+/* Estilo específico para a faixa 2 */
+.quemSomos .listra2 {
+  justify-self: end;
+  border-radius: 0 0 0 15px;
+}
+
+/* Estilo para a área principal */
+main {
+  display: grid;
+  grid-area: main;
+  grid-auto-rows: auto;
+  grid-auto-columns: 100%;
+}
+
+/* Estilo para a seção dentro da área principal */
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  top: 3vh;
+}
+
+/* Estilo para a caixa dentro da seção */
+section .box {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  color: aliceblue;
+  left: 2%;
+  top: 5%;
+}
+
+/* Estilo para o título dentro da caixa */
+.box h2 {
+  position: relative;
+  height: 1vh;
+  font-size: 2vw;
+  left: 1%;
+}
+
+/* Estilo para a lista dentro da caixa */
+.box ul {
+  position: relative;
+  top: 5%;
+  font-size: 1.5vw;
+  left: 1%;
+}
+
+/* Estilo para os itens da lista dentro da caixa */
+.box li {
+  padding-top: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-area: footer;
+  grid-auto-rows: auto;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(15, 171, 15);
+  color: white;
+  font-size: 2vw;
+  font-size-adjust: auto;
+  top: 3vh;
+}
+
+/* Estilos responsivos para telas com largura até 665px */
+@media only screen and (max-width: 665px) {
+
+  /* Estilo para o título dentro da seção 'quemSomos' em telas pequenas */
+  .quemSomos h1 {
+    font-size: 3vw;
+  }
+}
